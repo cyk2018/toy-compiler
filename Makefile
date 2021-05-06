@@ -9,7 +9,7 @@ OBJS = 	parser.o  \
 
 LLVMCONFIG = llvm-config
 CPPFLAGS = `$(LLVMCONFIG) --cppflags` -std=c++14
-LDFLAGS = `$(LLVMCONFIG) --ldflags` -lz -lncurses
+LDFLAGS = `$(LLVMCONFIG) --ldflags` -lncurses
 LIBS = `$(LLVMCONFIG) --libs`
 CC = clang
 CXX = clang++
